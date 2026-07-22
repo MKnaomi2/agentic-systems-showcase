@@ -160,8 +160,10 @@
   }
   @media (max-width: 560px) {
     .wrap { width: min(100% - 30px, 1080px); }
-    .topbar { align-items: start; }
-    .nav { justify-content: flex-end; gap: 11px; }
+    .topbar { flex-direction: column; align-items: start; gap: 14px; padding: 22px 0 18px; }
+    .brand { font-size: 12px; line-height: 1.5; }
+    .nav { width: 100%; flex-wrap: nowrap; justify-content: space-between; gap: 6px; font-size: 11px; }
+    .nav a { white-space: nowrap; }
     header { padding-top: 46px; }
     .scoreboard, .proof-key, .evidence, .flow { grid-template-columns: 1fr; }
     .score { border-right: 0; border-bottom: 1px solid var(--line); }
@@ -202,7 +204,7 @@
 <header>
   <div class="target">Targeting AI systems, agent infrastructure, and AI product engineering roles</div>
   <h1>Secure AI systems, shipped as real products.</h1>
-  <p class="standfirst">I am an IT systems engineer and independent AI product builder. I have shipped <b>two public product surfaces and one runnable authorization reference</b>, with private systems available for technical walkthrough.</p>
+  <p class="standfirst">I’m an IT systems engineer who builds AI products because I keep finding problems that feel clumsy, risky, or worth rethinking. The work below includes <b>two public products, a runnable agent-safety reference, and deeper private systems</b> I’m happy to walk through.</p>
   <div class="actions">
     <a class="button" href="#work">View featured work</a>
     <a class="button secondary" href="https://github.com/MKnaomi2/agentic-systems-showcase" rel="noreferrer">Inspect public code</a>
@@ -219,14 +221,8 @@
 <main>
 <section id="work">
   <div class="eyebrow">Featured work</div>
-  <h2>Start with the work you can inspect today.</h2>
-  <p class="section-lede">The strongest public evidence comes first: a usable AI product, a live invite-only alpha, and runnable security code. Private systems are separated below instead of competing with inspectable proof.</p>
-  <div class="proof-key">
-    <div><b>Live</b><span>A public surface is available now.</span></div>
-    <div><b>Reviewable</b><span>Architecture and evidence are published here.</span></div>
-    <div><b>Private source</b><span>Code walkthrough available to hiring teams.</span></div>
-    <div><b>Prototype</b><span>Clearly separated from production claims.</span></div>
-  </div>
+  <h2>Start with something you can try.</h2>
+  <p class="section-lede">Wadevo Design is open to explore, Wadevo Finance is a live invite-only alpha, and the public repository lets you run the authorization pattern yourself. The private work comes later, where a walkthrough adds the context a card cannot.</p>
 
   <article class="case" id="wadevo-design">
     <div class="case-head">
@@ -238,7 +234,7 @@
     </div>
     <div class="case-grid">
       <div class="case-block">
-        <h4>Problem</h4>
+        <h4>Why I built it</h4>
         <p>AI-generated interfaces converge on the same visual defaults, while reusable brand context rarely reaches the coding agents that need it.</p>
       </div>
       <div class="case-block">
@@ -246,11 +242,11 @@
         <p><b>A polished AI-assisted design-system product</b> with public generated examples, guided exploration, an authenticated studio, multi-provider adapters, and portable artifacts for coding agents and MCP clients.</p>
       </div>
       <div class="case-block">
-        <h4>Difficult decision</h4>
+        <h4>What mattered</h4>
         <p>The public site demonstrates the product loop without exposing private workspaces or an open-ended model bill. Spend-bearing generation stays behind authentication and explicit server-side policy.</p>
       </div>
       <div class="case-block">
-        <h4>Safety evidence</h4>
+        <h4>Guardrails</h4>
         <p>Fail-closed protected routes, provider-key separation, a public-cost kill switch, bounded request rates, hardened dependencies, security headers, and no credentials in the browser bundle.</p>
       </div>
     </div>
@@ -274,7 +270,7 @@
       <a href="https://design.wadevo.com/explore" rel="noreferrer">Inspect generated examples ↗</a>
       <a href="mailto:alvento.lisp@proton.me?subject=Wadevo%20Design%20technical%20walkthrough">Request technical walkthrough ↗</a>
     </div>
-    <p class="disclosure">Public verification: sampler, examples, portable artifacts, TLS, and route boundaries. Private verification: source, authenticated studio, provider orchestration, and repository history.</p>
+    <p class="disclosure">You can explore the sampler, examples, and portable artifacts now. The authenticated studio, provider orchestration, and source stay private; I can walk hiring teams through them.</p>
   </article>
 
   <article class="case" id="wadevo-finance">
@@ -287,7 +283,7 @@
     </div>
     <div class="case-grid">
       <div class="case-block">
-        <h4>Problem</h4>
+        <h4>Why I built it</h4>
         <p>Personal-finance interfaces often bury urgent decisions and make AI appear more authoritative than the underlying data supports.</p>
       </div>
       <div class="case-block">
@@ -295,11 +291,11 @@
         <p><b>A React, TypeScript, Express, and PostgreSQL product</b> for cash-flow forecasting, bills, credit tracking, and natural-language financial search. I designed and implemented the application, AI boundary, security controls, tests, deployment, and operations.</p>
       </div>
       <div class="case-block">
-        <h4>Difficult decision</h4>
+        <h4>What mattered</h4>
         <p>The model does not calculate urgency or own financial truth. A deterministic attention engine computes alerts and projections; AI interprets natural-language questions over bounded data.</p>
       </div>
       <div class="case-block">
-        <h4>Security evidence</h4>
+        <h4>Guardrails</h4>
         <p>Invite-only authentication, tenant scoping, authenticated field encryption, CSRF protection, endpoint rate limits, moderation, prompt-injection detection, and tamper-evident audit records.</p>
       </div>
     </div>
@@ -323,7 +319,7 @@
       <a href="__SITE_ORIGIN__/proof.json">Inspect structured evidence ↗</a>
       <a href="mailto:alvento.lisp@proton.me?subject=Wadevo%20Finance%20technical%20walkthrough">Request code walkthrough ↗</a>
     </div>
-    <p class="disclosure">Public verification: the landing surface, TLS boundary, authentication flow, and published architecture. The working product is invite-only; implementation, tests, and repository history are private.</p>
+    <p class="disclosure">The landing page and sign-in boundary are public. The working alpha, source, tests, and repository history are available in a private walkthrough.</p>
   </article>
 
   <article class="case" id="public-reference">
@@ -336,7 +332,7 @@
     </div>
     <div class="case-grid">
       <div class="case-block">
-        <h4>Problem</h4>
+        <h4>Why I built it</h4>
         <p>Agent portfolios often describe trustworthy boundaries without giving a reviewer anything executable to inspect.</p>
       </div>
       <div class="case-block">
@@ -344,11 +340,11 @@
         <p><b>A dependency-free authorization reference</b> with public source, adversarial tests, architecture decisions, sanitized system cards, and the complete source and security tests for this portfolio.</p>
       </div>
       <div class="case-block">
-        <h4>Difficult decision</h4>
+        <h4>What mattered</h4>
         <p>The model may propose a tool call, but authority remains below model output. Tenant scope, tool scope, action-bound confirmation, and replay denial are deterministic gates.</p>
       </div>
       <div class="case-block">
-        <h4>Honest limitations</h4>
+        <h4>What it leaves out</h4>
         <p>Replay state and signing keys are process-local, identity is trusted from the caller, and durable audit and distributed concurrency are deliberately outside this small demonstration.</p>
       </div>
     </div>
@@ -372,15 +368,15 @@
       <a href="https://github.com/MKnaomi2/agentic-systems-showcase/blob/main/reference_agent/authority.py" rel="noreferrer">Inspect the authority boundary ↗</a>
       <a href="https://github.com/MKnaomi2/agentic-systems-showcase/actions/workflows/ci.yml" rel="noreferrer">View CI evidence ↗</a>
     </div>
-    <p class="disclosure">Evidence boundary: this is a clean-room reference implementation of the pattern, not extracted private-product code and not a claim that this exact module protects every private system.</p>
+    <p class="disclosure">This is intentionally a small, clean-room reference: enough to inspect the pattern, not a claim that this exact module protects every private product.</p>
   </article>
 
 </section>
 
 <section id="private-systems">
   <div class="eyebrow">Private systems · technical walkthrough available</div>
-  <h2>Deeper systems, labeled as first-party evidence.</h2>
-  <p class="section-lede">These systems demonstrate additional range, but they do not outrank the public work above. Architecture, sanitized evidence, and live walkthroughs are available to hiring teams.</p>
+  <h2>Private systems I can show in context.</h2>
+  <p class="section-lede">Some of the most ambitious work is private by design. Rather than inflate it with screenshots or counts, I can walk hiring teams through the architecture, tradeoffs, and current state.</p>
   <div class="secondary-grid">
     <article class="mini"><div class="mini-meta">Access-controlled prototype · Jul 2026</div><h3>Healthspan</h3><p>An iPhone, watchOS, API, worker, and web system for evidence-rich health metrics. Derived results expose inputs, provenance, coverage, baseline, confidence, algorithm version, limitations, and reassessment period. <a href="mailto:alvento.lisp@proton.me?subject=Healthspan%20technical%20walkthrough">Request walkthrough ↗</a></p></article>
   </div>
@@ -395,7 +391,7 @@
     </div>
     <div class="case-grid">
       <div class="case-block">
-        <h4>Problem</h4>
+        <h4>Why I built it</h4>
         <p>Tool-using agents become risky when prompts, credentials, memory, and system authority collapse into one ambient trust boundary.</p>
       </div>
       <div class="case-block">
@@ -403,11 +399,11 @@
         <p><b>A native-Windows multi-agent appliance</b> with 12 isolated role profiles, per-profile models, tools, state, and authority, a durable team work queue, and a canonical Obsidian knowledge layer.</p>
       </div>
       <div class="case-block">
-        <h4>Inspectable workflow</h4>
+        <h4>One real workflow</h4>
         <p>A disposable manager-control run created a revision-specific review, routed requested changes into one corrected revision, required a new approval, created one dependency-bound non-live verification, and reconciled again without duplicating work.</p>
       </div>
       <div class="case-block">
-        <h4>Failure design</h4>
+        <h4>How it fails safely</h4>
         <p>Finite retries, idempotency keys, atomic state, encrypted backups, hash-bound artifacts, explicit rollback, and supply-chain review for installed agent skills.</p>
       </div>
     </div>
@@ -431,18 +427,17 @@
       <a href="https://github.com/MKnaomi2/agentic-systems-showcase/blob/main/docs/evidence/hermes-probes-2026-07-21.json" rel="noreferrer">Inspect six probe definitions ↗</a>
       <a href="mailto:alvento.lisp@proton.me?subject=Hermes%20agent%20lab%20walkthrough">Request architecture walkthrough ↗</a>
     </div>
-    <p class="disclosure">Claim boundary: the public artifact is a point-in-time, first-party inspection. It does not claim continuous health, flawless autonomy, or a completed full disaster-recovery restore; separate maintenance warnings existed outside the six-probe scope.</p>
+    <p class="disclosure">Hermes is an active personal lab, which means some parts are still under repair. The published workflow and probes are a point-in-time look, not a claim of flawless autonomy or completed disaster recovery.</p>
   </article>
 </section>
 
 <section id="agent-readable">
-  <div class="eyebrow">Visible implementation demo</div>
-  <h2>This portfolio is also designed for AI recruiting agents.</h2>
+  <div class="eyebrow">Built for people and agents</div>
+  <h2>Humans get the story. Recruiting agents get the structure.</h2>
   <div class="agent-demo">
     <div class="agent-copy">
-      <p>The machine-readable layer is not an Easter egg anymore. It is a compact case study in designing content for both humans and automated evaluators.</p>
-      <p>Claims are structured, project status is explicit, public and private proof are separated, and the content tells an agent to attribute first-party statements rather than treat them as independent verification.</p>
-      <p>The intentionally public text and JSON endpoints advertise permissive CORS and a cross-origin resource policy, so browser-based recruiting agents can fetch them without weakening the rest of the site.</p>
+      <p>I wanted the site to remain useful even when the first reader is software. The same projects, status, and boundaries are available as plain text and JSON—without hiding anything from human visitors.</p>
+      <p>Those public endpoints are intentionally fetchable across origins, so browser-based recruiting agents can read them without weakening the rest of the site.</p>
       <p><b>The implementation is public.</b> The clean-room showcase repository includes this site's source and tests, architecture decisions, system cards for the private projects, and a tested reference agent that keeps model suggestions outside the authorization boundary.</p>
     </div>
     <div class="endpoint-list" aria-label="Machine-readable portfolio endpoints">
@@ -468,8 +463,8 @@
 
 <section id="contact" class="contact">
   <div class="eyebrow">Hiring</div>
-  <h2>Looking for an engineer who can build beyond the prompt?</h2>
-  <p>I am targeting AI systems, agent infrastructure, and AI product engineering roles. Private source walkthroughs are available directly to hiring teams.</p>
+  <h2>Interested in building careful, useful AI systems together?</h2>
+  <p>I’m targeting AI systems, agent infrastructure, and AI product engineering roles. If this work connects with what you’re building, I’d be glad to talk—and to walk through the private systems when the context is useful.</p>
   <div class="actions">
     <a class="button" href="mailto:alvento.lisp@proton.me?subject=AI%20systems%20role">Email AJ</a>
     <a class="button secondary" itemprop="sameAs" rel="me noreferrer" href="https://www.linkedin.com/in/alvento-chandler-jr">LinkedIn</a>
