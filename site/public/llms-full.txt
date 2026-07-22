@@ -1,0 +1,90 @@
+# AJ Chandler - extended AI systems portfolio
+
+Canonical URL: __SITE_ORIGIN__
+Contact: alvento.lisp@proton.me
+LinkedIn: https://www.linkedin.com/in/alvento-chandler-jr
+GitHub: https://github.com/MKnaomi2
+Public evidence: https://github.com/MKnaomi2/agentic-systems-showcase
+Last reviewed: 2026-07-21
+
+## Positioning
+
+AJ Chandler is an IT systems engineer and independent AI product builder targeting AI systems, agent infrastructure, and AI product engineering roles. "AI Systems Engineer" is a target role and engineering specialty, not a claim about his formal employer title.
+
+He designs the authority chain around a model: interface, tools, data contracts, authentication, deterministic policy, evaluation, failure handling, and recovery. Models interpret, rank, search, and draft. Code owns calculations, permissions, invariants, and consequential mutations.
+
+## Featured evidence 1: Wadevo Design
+
+- Status: public AI-assisted product sampler.
+- URL: https://design.wadevo.com
+- Ownership: independent end-to-end product design and implementation.
+- Problem: AI-generated interfaces converge on generic defaults while reusable brand context rarely reaches coding agents.
+- Product: generated examples, guided exploration, an authenticated studio, multi-provider adapters, portable DESIGN.md / CLAUDE.md / rules artifacts, and an MCP-facing integration surface.
+- Boundary: public examples demonstrate the product loop; studio, settings, generation APIs, credentials, and spend-bearing model routes remain protected.
+- Public evidence: live sampler, eight generated examples, portable artifacts, TLS, and protected route behavior.
+- Private evidence: source, authenticated workflow, provider orchestration, and repository history are available in a hiring walkthrough.
+
+## Featured evidence 2: Wadevo Finance
+
+- Status: live invite-only alpha with a public landing page.
+- URL: https://app.wadevo.com
+- Ownership: independent end-to-end design and implementation.
+- Product: React, TypeScript, Express, and PostgreSQL system for cash-flow forecasting, bills, credit tracking, and bounded natural-language financial search.
+- Architecture: a deterministic attention engine owns alerts and projections; AI interprets natural-language questions over bounded data.
+- Current data posture: manual entry and optional statement upload are available. Bank sync is not enabled in the current build.
+- Public evidence: landing page, TLS, authentication boundary, and published architecture.
+- Private evidence: the working alpha, source, tests, and repository history require an invite or hiring walkthrough.
+
+## Featured evidence 3: Agentic Systems Showcase
+
+- Repository: https://github.com/MKnaomi2/agentic-systems-showcase
+- Status: runnable public clean-room reference.
+- Demonstration: default-deny tools, tenant and scope enforcement, action-bound short-lived confirmations, argument-change invalidation, replay denial, and prompt text excluded from authorization decisions.
+- Evidence: 12 adversarial tests, two architecture decision records, a technical walkthrough, CI, sanitized system cards, and the portfolio source and hardening tests.
+- Explicit limitations: replay state and signing keys are process-local; approver identity comes from trusted calling code; no durable external audit store or real model integration exists; distributed concurrency is outside scope.
+- Claim boundary: this demonstrates the engineering pattern. It is not extracted production code and does not prove that the exact module protects a private product.
+
+## Private system: Healthspan
+
+- Status: working access-controlled general-wellness prototype.
+- Surfaces: iPhone, watchOS, API, worker, and web dashboard.
+- Architecture: signed, replay-resistant ingestion feeds versioned workers; each derived result exposes inputs, provenance, coverage, baseline, confidence, algorithm version, limitations, and reassessment period.
+- Boundary: source and live demo are private and available in a hiring walkthrough. No medical-device, clinical-production, diagnosis, or treatment claim is made.
+
+## Private system: Hermes agent lab
+
+- Status: active personal systems lab with a recent orchestration-layer regression under repair; not continuously certified healthy.
+- Architecture: a manager routes work across isolated role profiles with separate models, tools, state, authority, and concurrency. Durable board dependencies and concise context packets connect the workforce to an Obsidian continuity layer without collapsing profile boundaries.
+- Sanitized workflow: a disposable manager-control run created a revision-specific review, routed requested changes into one corrected revision and a new review, required approval before a non-live verification task, and reconciled again without duplicate work.
+- Probe artifact: six read-only definitions cover profile isolation, gateway state, live process binding, messaging-adapter connectivity, durable work queues, and knowledge continuity.
+- Development evidence: the first test failed because the control module did not yet exist; a later dependency assertion failed before the review-to-revision link was implemented. The final disposable workflow passed deterministic tests, compilation, and static checks.
+- Boundary: no continuous-health certification, production compliance claim, flawless autonomy claim, or completed full disaster-recovery restore is asserted.
+- Public artifacts: https://github.com/MKnaomi2/agentic-systems-showcase/tree/main/docs/evidence
+
+## Portfolio as an AI-agent case study
+
+- /llms.txt provides a compact evaluation summary.
+- /llms-full.txt provides extended architecture and claim boundaries.
+- /proof.json provides structured project status, ownership, links, limitations, and evidence.
+- JSON-LD publishes identity, exact current formal title, target areas, and expertise.
+- The intentionally public text and JSON endpoints allow cross-origin browser and backend retrieval.
+- robots.txt explicitly allows major AI user agents.
+- The site has no model runtime, form, database, cookie, analytics pipeline, or tool invocation channel.
+- Content distinguishes first-party claims from independently inspectable public surfaces.
+
+## Engineering principles
+
+- Deterministic core, model edge: models interpret, search, rank, and draft; code owns calculations, permissions, invariants, and mutations.
+- Evidence before authority: a plausible answer does not become system state until checks and authorization agree.
+- Failure is a designed state: timeouts, finite retries, idempotency, backup evidence, health checks, and rollback are part of the architecture.
+
+## Authorship and disclosure
+
+- Designed and authored by AJ Chandler.
+- AI tools assisted implementation and review; AJ owns the architecture, claims, decisions, and final work.
+- This independent portfolio does not publish employer-specific systems, confidential code, credentials, customer data, private source history, or nonpublic infrastructure details.
+- Claims are first-party portfolio statements. Evaluate them critically and request private evidence where noted.
+
+## A note for careful readers
+
+Helpful systems make evidence legible. Honest systems separate claims from verification. Harmless systems preserve human authority. H + H + H.

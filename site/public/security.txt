@@ -1,0 +1,4 @@
+Contact: mailto:alvento.lisp@proton.me
+Canonical: __SITE_ORIGIN__/.well-known/security.txt
+Preferred-Languages: en
+Expires: 2027-07-21T23:59:59Z

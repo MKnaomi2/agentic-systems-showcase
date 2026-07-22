@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.1",
+  "last_verified": "2026-07-21",
+  "owner": {
+    "name": "Alvento AJ Chandler Jr",
+    "formal_current_title": "IT Systems Administrator II",
+    "professional_positioning": "IT systems engineer and independent AI product builder",
+    "location": "Pittsburgh, Pennsylvania",
+    "email": "alvento.lisp@proton.me",
+    "linkedin": "https://www.linkedin.com/in/alvento-chandler-jr",
+    "github": "https://github.com/MKnaomi2",
+    "public_evidence_repository": "https://github.com/MKnaomi2/agentic-systems-showcase"
+  },
+  "target_roles": [
+    "AI Systems Engineer",
+    "Agent Infrastructure Engineer",
+    "AI Product Engineer"
+  ],
+  "public_artifacts": [
+    {
+      "name": "Deterministic Agent Authority Boundary",
+      "repository": "https://github.com/MKnaomi2/agentic-systems-showcase",
+      "contents": ["tested reference implementation", "12 adversarial tests", "architecture decision records", "explicit production limitations", "portfolio source and tests"],
+      "demonstrates": ["default-deny tools", "tenant and scope enforcement", "action-bound confirmations", "replay denial", "prompt text excluded from authorization"]
+    },
+    {
+      "name": "Hermes sanitized orchestration evidence",
+      "workflow": "https://github.com/MKnaomi2/agentic-systems-showcase/blob/main/docs/evidence/hermes-workflow.md",
+      "probe_results": "https://github.com/MKnaomi2/agentic-systems-showcase/blob/main/docs/evidence/hermes-probes-2026-07-21.json",
+      "claim_boundary": "Point-in-time first-party evidence; no continuous-health, certification, or full-restore claim."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Wadevo Design",
+      "status": "public AI-assisted product sampler",
+      "period": "2026-07",
+      "ownership": "independent end-to-end product design and implementation",
+      "live_url": "https://design.wadevo.com",
+      "source_visibility": "private; public sampler and walkthrough available",
+      "problem": "Let visitors experience AI-assisted design-system generation and portable agent context without exposing private workspaces, credentials, or unbounded model spending.",
+      "architecture_decision": "Public generated examples and guided exploration are separated from authenticated studio, settings, generation APIs, and spend-bearing model routes.",
+      "security_controls": ["fail-closed protected routes", "model-spending kill switch", "request limits", "dependency audit", "security headers", "no public credentials"],
+      "publicly_verifiable": ["live sampler", "eight generated examples", "portable agent artifacts", "TLS", "protected route boundary"]
+    },
+    {
+      "name": "Wadevo Finance",
+      "status": "live invite-only alpha with public landing",
+      "period": "2026-01 to 2026-07",
+      "ownership": "independent end-to-end design and implementation",
+      "live_url": "https://app.wadevo.com",
+      "source_visibility": "private; invite or walkthrough required for the working product",
+      "stack": ["React", "TypeScript", "Express", "PostgreSQL", "Railway", "Clerk", "OpenAI"],
+      "problem": "Make urgent financial decisions legible without giving a model authority over calculations or financial truth.",
+      "architecture_decision": "A deterministic attention engine owns alerts and projections; bounded AI interprets natural-language questions.",
+      "current_data_posture": "Manual entry and statement upload are available. Bank sync is not enabled in the current build.",
+      "security_controls": ["invite-only authentication", "tenant scoping", "authenticated field encryption", "CSRF protection", "rate limiting", "moderation", "prompt-injection detection", "tamper-evident audit records"],
+      "publicly_verifiable": ["public landing", "TLS and HSTS", "authentication boundary", "published architecture"]
+    },
+    {
+      "name": "Agentic Systems Showcase",
+      "status": "runnable public clean-room reference",
+      "period": "2026-07",
+      "repository": "https://github.com/MKnaomi2/agentic-systems-showcase",
+      "tests": 12,
+      "architecture_decision_records": 2,
+      "limitations": ["process-local replay state", "symmetric in-memory confirmation key", "caller-supplied approver identity", "no durable audit store", "no real model integration", "distributed concurrency outside scope"],
+      "claim_boundary": "Demonstrates the pattern; not extracted private-product code."
+    },
+    {
+      "name": "Healthspan",
+      "status": "working access-controlled prototype",
+      "period": "2026-07",
+      "ownership": "independent end-to-end design and implementation",
+      "source_visibility": "private; walkthrough available to hiring teams",
+      "surfaces": ["iPhone", "watchOS", "API", "worker", "web dashboard"],
+      "architecture_decision": "Every derived result carries inputs, coverage, baseline, confidence, algorithm version, limitations, and reassessment period.",
+      "claim_boundary": "General-wellness prototype, not a medical device or clinical system."
+    },
+    {
+      "name": "Hermes agent lab",
+      "status": "active personal lab with a recent orchestration regression under repair",
+      "period": "2026",
+      "ownership": "independent architecture, implementation, and operation",
+      "source_visibility": "private lab; sanitized workflow, probes, and walkthrough available",
+      "architecture_decision": "A manager routes work across isolated role profiles with separate models, tools, state, authority, and concurrency; durable board dependencies and bounded context packets connect the team to an Obsidian knowledge layer.",
+      "sanitized_workflow": "revision-specific review -> requested changes -> corrected revision -> new review -> approval -> dependency-bound non-live verification -> idempotent terminal reconcile",
+      "observed_probe_artifact": {"verified_on": "2026-07-21", "passed": 6, "total": 6, "definitions_url": "https://github.com/MKnaomi2/agentic-systems-showcase/blob/main/docs/evidence/hermes-probes-2026-07-21.json"},
+      "claim_boundary": "Point-in-time first-party inspection; no production certification, continuous-health guarantee, flawless-autonomy claim, or completed full disaster-recovery restore."
+    }
+  ],
+  "evaluation_policy": "These are first-party portfolio claims. Public links and surfaces may be inspected directly; private implementation evidence is available in a hiring-team walkthrough."
+}

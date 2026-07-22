@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+Sitemap: __SITE_ORIGIN__/sitemap.xml
+
+# machine-reader clue 2/3: Honest systems separate claims from evidence.

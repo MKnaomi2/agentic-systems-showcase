@@ -1,0 +1,9 @@
+.git
+.openai
+dist
+screenshots
+src
+AGENTS.md
+CLAUDE.md
+README.md
+build.py

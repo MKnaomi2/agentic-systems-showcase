@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "observed_on": "2026-07-21",
+  "scope": "read-only inspection of a private personal Hermes installation",
+  "result": "6 of 6 passed",
+  "probes": [
+    {
+      "id": "profile-isolation",
+      "definition": "Expected role profiles each have their own configuration, behavior contract, and state database.",
+      "result": "pass",
+      "evidence": {"profiles_observed": 12, "with_distinct_config": 12, "with_behavior_contract": 12, "with_state_database": 12}
+    },
+    {
+      "id": "gateway-state",
+      "definition": "The gateway state record reports a running lifecycle state.",
+      "result": "pass"
+    },
+    {
+      "id": "gateway-process-binding",
+      "definition": "The recorded gateway process identifier resolves to a live process.",
+      "result": "pass"
+    },
+    {
+      "id": "messaging-adapter",
+      "definition": "The configured remote messaging adapter reports a connected state without exposing its identity or credential.",
+      "result": "pass"
+    },
+    {
+      "id": "durable-work-queue",
+      "definition": "The team orchestration layer has durable board state rather than prompt-only handoffs.",
+      "result": "pass",
+      "evidence": {"durable_board_databases_observed": 3}
+    },
+    {
+      "id": "knowledge-continuity",
+      "definition": "The canonical knowledge vault is reachable, contains Markdown records, and includes reviewable metadata on a substantial subset.",
+      "result": "pass",
+      "evidence": {"markdown_records_observed": 400, "records_with_frontmatter_observed": 282, "vault_configuration_present": true}
+    }
+  ],
+  "limitations": [
+    "The probe is a point-in-time first-party inspection, not continuous monitoring or independent certification.",
+    "Counts describe the observed topology; they do not establish that more profiles or notes produce better outcomes.",
+    "No successful full disaster-recovery restore is claimed by this artifact.",
+    "Separate maintenance warnings existed outside this six-probe scope."
+  ]
+}
